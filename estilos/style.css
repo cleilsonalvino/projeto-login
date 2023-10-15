@@ -56,4 +56,5 @@ section#login > div#imagem {
 section#login > div#form {
     padding: 10px;
     display: block;
+    text-align: center;
 }

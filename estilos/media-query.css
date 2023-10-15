@@ -9,6 +9,11 @@ Extra large screens, TV – 1201px, and more.
 */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #00B8DB, #A900DB);
+    }
+
     section#login {
         width: 70vw;
     }
@@ -26,6 +31,11 @@ Extra large screens, TV – 1201px, and more.
 }
 
 @media screen and (min-width: 768px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #00B8DB, #A900DB);
+    }
+    
     section#login {
         width: 80vw;
     }
