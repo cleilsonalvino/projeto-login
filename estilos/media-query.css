@@ -35,7 +35,7 @@ Extra large screens, TV – 1201px, and more.
     body {
         background-image: linear-gradient(to bottom, #00B8DB, #A900DB);
     }
-    
+
     section#login {
         width: 80vw;
     }
@@ -49,5 +49,6 @@ Extra large screens, TV – 1201px, and more.
     section#login > div#form {
         float: right;
         width: 70%;
+        
     }
 }
