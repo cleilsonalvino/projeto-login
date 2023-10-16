@@ -17,7 +17,7 @@ lilas: #A900DB
 
 
 body, html {
-    background-color: #00B8DB;
+    background-image: linear-gradient(to bottom, #00B8DB, #A900DB);
     height: 100vh;
     width: 100vw;
 }
@@ -26,20 +26,22 @@ main {
     position: relative;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 520px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
-
+    transform: translate(-50%, -50%);
     transition: width 1s, height 1s;
 
 }
@@ -57,4 +59,79 @@ section#login > div#form {
     padding: 10px;
     display: block;
     text-align: center;
+    
+}
+
+section#login > div#form > h1 {
+    padding: 5px;
+    
+}
+
+
+form > input[type=submit] {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #00B8DB;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #00677c;
+    color: white;
+}
+
+form > .botao {
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+    font-size: 1em;
+    
+}
+
+form > .botao > i {
+    color: rgb(0, 110, 255);
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+form > .campo {
+    padding: 5px;
+    background-image: linear-gradient(45deg, #A900DB, #670086);
+    margin: 10px auto;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+}
+
+form > .campo > input {
+    border: none;
+    background: none;
+    color: white;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+}
+
+form > .campo > input:focus {
+    border: none;
+    background: none;
+    color: rgb(252, 198, 198);
+}
+
+form > .campo > input::placeholder {
+    color: rgb(136, 136, 136);   
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    top: -17%;
+    color: white;
 }
